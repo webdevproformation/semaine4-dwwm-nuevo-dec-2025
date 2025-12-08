@@ -1,0 +1,154 @@
+/* font */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* palette de couleur */
+
+:root{
+    --primary : #007bff ;
+    --secondary : #212529; 
+    --gris-clair : #f7f7f7 ;
+    --gris-bordure : #d8d8d8 ; 
+}
+
+/* remise à zero du html */
+
+body , h1,h2,h3,p{
+    margin: 0;
+    padding: 0;
+}
+
+ul, li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a{
+    color : unset ;
+    text-decoration: none;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    color: var(--secondary);
+}
+
+/* styles utilitaires */
+
+
+.btn{
+    color: white;
+    border:1px solid var(--primary);
+    padding: 0.5em 0.8em;
+    border-radius: 5px;
+    background-color: var(--primary);
+    transition: color 0.7s , background-color 0.7s;
+
+    &:hover{
+        color: var(--primary);
+        background-color: white;
+    }
+}
+
+.btn-outline{
+    color: var(--primary);
+    border:1px solid var(--primary);
+    padding: 0.5em 0.8em;
+    border-radius: 5px;
+    background-color: white;
+    transition: color 0.7s , background-color 0.7s;
+
+    &:hover{
+        color: white;
+        background-color: var(--primary);
+    }
+}
+
+/* style en tête du site*/
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+    font-size: 1.2rem;
+}
+
+.header-menu{
+    display: flex;
+    gap:20px;
+}
+
+/* partie centrale*/
+
+
+main{
+    margin: 0 auto;
+    width: 960px;
+    text-align: center;
+}
+
+.hero-title{
+    font-size: 2.2rem;
+    margin: 1em 0 0.5em 0;
+    font-weight: 400;
+}
+
+.hero-text{
+    margin-bottom: 3em;
+}
+
+.grille{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card{
+    border:1px solid var(--gris-bordure);
+    border-radius:5px;
+    width: 300px;
+}
+
+.card-title{
+    border-bottom: 1px solid var(--gris-bordure);
+    background-color: var(--gris-clair);
+    padding: 0.5em 0;
+    font-weight: 400;
+    font-size: 1.7rem;
+}
+
+.card-price{
+    padding: 0.8em ;
+    font-size: 1.4rem;
+}
+.card-list{
+    padding: 0   0.8em  0.8em  0.8em;
+    font-size: 1.1rem;
+}
+
+.card-btn{
+    display: block;
+    margin: 0 0.8em 0.8em 0.8em;
+}
+
+/* footer */
+
+
+footer{
+    margin: 3em auto;
+    width: 960px;
+    font-size: 1.1rem;
+}
+
+.footer-menu{
+    display: flex;
+    justify-content: flex-end;
+    gap:100px;
+}
+
+.footer-menu-area-title{
+    font-weight: 800;
+    margin-bottom: 1em;
+}
